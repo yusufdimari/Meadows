@@ -44,23 +44,28 @@
             
                 <div class="mySlides fade">
                     <!-- <div class="numbertext">1 / 3</div> -->
-                    <img src="./images/PHOTO-2023-01-26-22-29-29 10.jpg" style="width:100%">
+                    <img src="./images/PHOTO-2023-01-26-22-33-35 9.jpg" style="width:100%">
                     <!-- <div class="text">Caption Text</div> -->
                 </div>
             
                 <div class="mySlides fade">
                     <!-- <div class="numbertext">2 / 3</div> -->
-                    <img src="./images/PHOTO-2023-01-26-22-29-29 2.jpg" style="width:100%">
+                    <img src="./images/PHOTO-2023-01-26-22-33-35 5.jpg" style="width:100%">
                     <!-- <div class="text">Caption Two</div> -->
                 </div>
             
                 <div class="mySlides fade">
                     <!-- <div class="numbertext">3 / 3</div> -->
-                    <img src="./images/PHOTO-2023-01-26-22-29-29 3.jpg" style="width:100%">
+                    <img src="./images/PHOTO-2023-01-26-22-33-35 7.jpg" style="width:100%">
                     <!-- <div class="text">Caption Three</div> -->
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img src="./images/PHOTO-2023-01-26-22-33-35 14.jpg" style="width:100%">
+                    <!-- <div class="text">Caption Three</div> -->
+                </div>
+                <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a> -->
             
             </div>
             <br>
@@ -87,7 +92,9 @@
                 <p>We specialize in a wide range of services, from new construction to remodeling and renovation. We also offer a
                     variety of services such as painting, flooring, roofing, and more. Our team is committed to providing you with the
                     best possible service and results.</p>
-                <button class="seeMoreBtn" onclick="document.location='about.html'">See more</button>
+                <!-- <button class="seeMoreBtn" onclick="document.location='about.html'">See more</button> -->
+                <a class="seeMoreBtn" href="./about.html">About</a>
+                
 
             </div>
             <div class="secondBlockImage">
@@ -145,9 +152,9 @@
     <script>
         let slideIndex = 0;
         showSlides();
-        function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
+        // function plusSlides(n) {
+        //         showSlides(slideIndex += n);
+        //     }
 
         function showSlides() {
             let i;
@@ -163,7 +170,7 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
     </script>
 </body>
