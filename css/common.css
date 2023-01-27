@@ -114,3 +114,13 @@ html, body{
     background-color: #d9e1ff;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.rowImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mySlides{
+    margin:10px;
+}
